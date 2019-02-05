@@ -3,7 +3,7 @@ More Custom FiveM Chat Commands
 
 # Install Instructions
 1. Add the files to your Server Resources and
-2. append "start servercommands" in your Server.cfg
+2. append "start RPCommands" in your Server.cfg
 
 # Commands List:
 - /id - Show Your ID
