@@ -1,5 +1,8 @@
 # Compiled Lua sources
-luac.out
+__resource.lua
+client.lua
+configs.lua
+server.lua
 
 # luarocks build files
 *.src.rock
