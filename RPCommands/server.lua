@@ -82,7 +82,7 @@ end
 -----------------------------------/ DONT TOUCH\---------------------------------
 -- Version Checking down here, better don't touch this
 local CurrentVersion = '1.0.1'
-local GithubResourceName = 'BetterRPCommands'
+local GithubResourceName = 'Resources'
  
 PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
 	PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/CHANGES', function(Error, Changes, Header)
@@ -110,7 +110,7 @@ end)
  
 -- Bot status down here, better don't touch this
 local Status = 'UpToDate'
-local GithubResourceName = 'FiveMToDiscord'		
+local GithubResourceName = 'Resources'		
  
 PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/ONLINE', function(Error, Online, Header)
 	PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/MAINTENANCE', function(Error, Maintenance, Header)
