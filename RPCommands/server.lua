@@ -7,6 +7,10 @@ AddEventHandler('chatMessage', function(source, name, msg)
 		TriggerClientEvent('chatMessage', -1, "^2>*^0" .. string.sub(msg,5), { 255, 255, 255 })
 
 	end
+        if sm[1] == "/me" and enable_core_commands == true then
+                CancelEvent()
+                TriggerClientEvent('chatMessage', -1 "^2>**0" .. string.sub(msg,5), { 255, 255, 255 })
+       end
 end)
 
 --------------------/ R P   N A M E \------------------------------
