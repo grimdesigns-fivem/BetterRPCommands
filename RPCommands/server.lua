@@ -81,7 +81,7 @@ end
 
 -----------------------------------/ DONT TOUCH\---------------------------------
 -- Version Checking down here, better don't touch this
-local CurrentVersion = '1.5.1'
+local CurrentVersion = '1.0.1'
 local GithubResourceName = 'BetterRPCommands'
  
 PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
