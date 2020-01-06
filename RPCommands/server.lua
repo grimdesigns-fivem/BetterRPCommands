@@ -78,3 +78,60 @@ function stringsplit(inputstr, sep)
     end
     return t
 end
+
+-----------------------------------/ DONT TOUCH\---------------------------------
+Version Checking down here, better don't touch this
+local CurrentVersion = '1.5.1'
+local GithubResourceName = 'BetterRPCommands'
+ 
+PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
+	PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/CHANGES', function(Error, Changes, Header)
+		print('\n')
+		print('##############')
+		print('## ' .. GetCurrentResourceName())
+		print('##')
+		print('## Current Version: ' .. CurrentVersion)
+		print('## Newest Version: ' .. NewestVersion)
+		print('##')
+		if CurrentVersion ~= NewestVersion then
+			print('##BetterRPCommands Outdated')
+			print('## Check the GitHub')
+			print('## For the newest Version!')
+                        print('## github.com/GrimDesignsFiveM/BetterRPCommands')
+			print('##############')
+			print('CHANGES: ' .. Changes)
+		else
+			print('## Up to date!')
+			print('##############')
+		end
+		print('\n')
+	end)
+end)
+ 
+-- Bot status down here, better don't touch this
+local Status = 'UpToDate'
+local GithubResourceName = 'FiveMToDiscord'		
+ 
+PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/ONLINE', function(Error, Online, Header)
+	PerformHttpRequest('https://raw.githubusercontent.com/GrimDesignsFiveM/BetterRPCommands/master/' .. GithubResourceName .. '/MAINTENANCE', function(Error, Maintenance, Header)
+		print('\n')
+		print('##############')
+		print('## ' .. GetCurrentResourceName())
+		print('##')
+		print('## Status: ' .. Status)
+		print('## Online: ' .. Online)
+		print('##')
+		if Status ~= UpToDate then
+			print('## Bot Is Online!')
+			print('##############')
+		else 
+			print('## Bot Is Outdated')
+			print('## Check the GitHub')
+			print('## For Status & Updates')
+                        print('## github.com/GrimDesignsFiveM/BetterRPCommands')
+			print('##############')
+			print('MAINTENANCE: ' .. Maintenance)
+		end
+		print('\n')
+	end)
+end)
