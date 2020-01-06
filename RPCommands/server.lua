@@ -80,7 +80,7 @@ function stringsplit(inputstr, sep)
 end
 
 -----------------------------------/ DONT TOUCH\---------------------------------
-Version Checking down here, better don't touch this
+-- Version Checking down here, better don't touch this
 local CurrentVersion = '1.5.1'
 local GithubResourceName = 'BetterRPCommands'
  
